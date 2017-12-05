@@ -1,0 +1,29 @@
+<div class="listbox">
+  <div class="sticker"></div>
+  <h1>To Do List</h1>
+  <div class="underbar"></div>
+
+  <div class="addbtn">
+    <%= link_to 'ADD LIST', new_todo_path, class: 'btn btn-success' %>
+  </div>
+
+  <div class="list">
+    <ul>
+      <% @todos.each do |todo| %>
+        <li>
+          <p class="due_date">Due Date : <%= todo.due_date %></p>
+          <p class="title"><%= link_to todo.title, todo_path(todo) %></p>
+
+          <div class="actions">
+            <%# 把編輯與刪除按鍵搬到 todos_helper.rb %>
+            <%# 用 helper 的方式來做按鈕的 render %>
+            <%# 可把 todo 物件，當成參數傳入 helper %>
+            <%= todo_edit_button(todo) %>
+            <%= todo_delete_button(todo) %>
+          </div>
+        </li>
+        <li class="itembar"></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
