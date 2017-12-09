@@ -3,10 +3,10 @@ before_action :find_todo, only: %i[show edit update destroy]
 
  def index
     # 依到期日 (due_date) 近到遠，取得 todos
-    @todos = Todo.order(due_date: :asc)
+    @todo = Todo.order(due_date: :asc)
   end
  	def new
-	@todos = Todo.new
+	@todo = Todo.new
     end
 
     def create

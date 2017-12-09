@@ -9,7 +9,7 @@
 
   <div class="list">
     <ul>
-      <% @todos.each do |todo| %>
+      <% @todo.each do |todo| %>
         <li>
           <p class="due_date">Due Date : <%= todo.due_date %></p>
           <p class="title"><%= link_to todo.title, todo_path(todo) %></p>
