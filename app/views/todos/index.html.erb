@@ -1,7 +1,7 @@
 <div class="listbox">
   <div class="sticker"></div>
   <h1>To Do List</h1>
-  <h2>待辦事項</h2>
+ <%# <h2>待辦事項</h2>%>
   <div class="underbar"></div>
 
   <div class="addbtn">
@@ -10,14 +10,10 @@
 
   <div class="list">
     <ul> 
-
       <% @todo.each do |todo| %>
-        <li>
-
-         
+        <li>      
           <p class="due_date">Due Date : <%= todo.due_date %></p>
           <p class="title"><%= link_to todo.title, todo_path(todo) %></p>
-	
           <div class="actions">
             <%# 把編輯與刪除按鍵搬到 todos_helper.rb %>
             <%# 用 helper 的方式來做按鈕的 render %>
