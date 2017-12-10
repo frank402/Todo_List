@@ -17,10 +17,11 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
 
+
 // =============normal setting============
 
 * {
-  // border: solid 1px black;
+   //border: solid 1px black;
   font-family: 'Gochi Hand', cursive;
 }
 
@@ -37,6 +38,10 @@ body {
 h1 {
   text-align: center;
   font-size: 70px;
+}
+h2 {
+  text-align: center;
+  font-size: 35px;
 }
 
 li {
@@ -66,7 +71,7 @@ li {
 }
 
 .listbox {
-  width: 600px;
+  width: 750px;
   max-height: 800px;
 
   border:solid 2px grey;
@@ -91,11 +96,11 @@ li {
 .addbtn {
   position: absolute;
   margin: 0px 30px;
-  left: 40px;
+  left: 70px;
 }
 
 .list {
-  margin: 80px 30px;
+  margin: 80px 70px;
   max-height: 550px;
   overflow: scroll;
 }
@@ -151,7 +156,7 @@ li {
   background-color: #f3ffbd;
   box-shadow: 3px 3px 8px rgba(0,0,0,.5);
   border: solid 2px grey;
-  margin: 0 auto;
+  margin: 100px auto;
   text-align: center;
   padding: 20px 0;
   font-size: 22px;
@@ -164,3 +169,4 @@ li {
 .itembox_btn {
   margin: 10px;
 }
+
