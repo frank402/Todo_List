@@ -1,5 +1,5 @@
 <div class="errorbox">
-   <% if @todo.errors.any? %>
+  <% if @todo.errors.any? %>
     <h2>We have some errors here !</h2>
     <ul class="errorlist">
       <% @todo.errors.full_messages.each do |msg| %>
@@ -11,7 +11,6 @@
 
 <div class="itembox">
   <%= form_for @todo do |f| %>
-  
     <%= f.label :title, 'Title' %>
     <br>
     <%= f.text_area :title %>

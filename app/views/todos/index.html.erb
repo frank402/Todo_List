@@ -10,7 +10,7 @@
 
   <div class="list">
     <ul> 
-      <% @todo.each do |todo| %>
+      <% @todos.each do |todo| %>
         <li>      
           <p class="due_date">Due Date : <%= todo.due_date %></p>
           <p class="title"><%= link_to todo.title, todo_path(todo) %></p>

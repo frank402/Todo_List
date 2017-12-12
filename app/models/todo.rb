@@ -4,7 +4,7 @@ class Todo < ApplicationRecord
   validates_presence_of :title, :due_date
   # 驗證：長度 20 個字符
   # 英文是 20 個字母，中文則是 20 個字
-  validates :title, length: { maximum: 20 }
+  validates :title, length: { maximum: 50 }
 
   # 判斷是否能夠刪除
   # 判斷條件可能有很多，所以將各項判斷分拆到 private method
